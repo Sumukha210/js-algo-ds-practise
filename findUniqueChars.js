@@ -40,10 +40,13 @@ console.log(findFirstUniqueChars("abcc"));
 const findFirstUniqueChars2 = (str = "") => {
   for (let i = 0; i < str.length; i++) {
     if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+      //Big o for time is BigO(n+n)=>BigO(2n)
       return 1;
     }
   }
   return -1;
 };
+//since it is inside the loop, the time complexcity is BigO(2n)*n=>BigO(n^2)=>quadratic
+//space complexcity is O(1)
 
 console.log(findFirstUniqueChars2("abbc"));
