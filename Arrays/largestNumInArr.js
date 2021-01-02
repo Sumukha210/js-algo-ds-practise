@@ -1,7 +1,8 @@
 // Return Largest Numbers in Arrays
-//largestOfFour fun returns an arr
-// largestOfFour([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]) should return [27, 5, 39, 1001]
-const largestOfFour = (arr = []) => {
+//largestNumInArr fun returns an arr
+// largestNumInArr([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]) should return   [1000, 1001, 857, 1]
+
+const largestNumInArr = (arr = []) => {
   //loop through arr
 
   //   let maxNum = Math.max(...item);
@@ -25,7 +26,7 @@ const largestOfFour = (arr = []) => {
 //for space,o(n)
 
 console.log(
-  largestOfFour([
+  largestNumInArr([
     [13, 27, 18, 26],
     [4, 5, 1, 3],
     [32, 35, 37, 39],
